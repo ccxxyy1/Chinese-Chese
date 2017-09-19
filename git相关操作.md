@@ -82,4 +82,5 @@ two line
 $ git reset --hard 6207e59
 HEAD is now at 6207e59 three
 注意:版本号不用写那么长,能要能保证不与其他版本号重复就行.
-例git reset --hard 6207 
+例git reset --hard 6207 how to delete branch
+git branch -d +分支
