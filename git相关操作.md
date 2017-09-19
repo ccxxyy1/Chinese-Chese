@@ -52,3 +52,34 @@ git remote rename online oschina
 3. 把公钥放在服务器
   用记事本打开id_rsa.pub,复制公钥内容.
   登陆git.oschina.net,如下图,填入公钥并保存 
+
+
+
+
+
+3.4 版本切换
+我们针对ver.txt,连续修改4次,形成4个版本,练习版本切换.
+one line
+second line
+third line
+four line
+git reflog 查看版本变化
+$ git reflog
+5d5df85 HEAD@{0}: commit: four
+6207e59 HEAD@{1}: commit: three
+70110b9 HEAD@{2}: commit: two
+bc65223 HEAD@{3}: commit (initial): one
+HEAD指向当前版本5d5df86,
+切换为head的前1版本,git reset --hard HEAD^
+切换为head的前2版本,git reset --hard HEAD^^
+切换为head的前100版本,git reset --hard HEAD~100
+实例: $ git reset --hard HEAD^^
+HEAD is now at 70110b9 two
+此时,查看ver.txt的内容变为:
+one line
+two line
+也可以利用版本号来切换,例
+$ git reset --hard 6207e59
+HEAD is now at 6207e59 three
+注意:版本号不用写那么长,能要能保证不与其他版本号重复就行.
+例git reset --hard 6207 
