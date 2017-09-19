@@ -25,11 +25,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
     mywidget.cpp
 
 HEADERS += \
-        mainwindow.h \
     mywidget.h
 
 FORMS += \

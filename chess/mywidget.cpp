@@ -1,8 +1,10 @@
 #include "mywidget.h"
 #include<QPainter>
 #include<QMouseEvent>
+#include<QPushButton>
 MyWidget::MyWidget(QWidget *parent) : QWidget(parent)
 {
+    button=new QPushButton("this is button",this);
 
 }
 
@@ -23,15 +25,13 @@ void MyWidget::paintEvent(QPaintEvent *event)
 
 
 }
+
 void MyWidget::mousePressEvent(QMouseEvent *event)
 {
     //得到鼠标点击的位置
     point_press=event->pos();
     //强制程序重新绘制界面
     update();
-
-
-
 
 }
 

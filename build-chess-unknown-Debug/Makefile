@@ -210,6 +210,7 @@ Makefile: ../chess/chess.pro D:/Dev/Qt/5.9.1/qt/mkspecs/win32-g++/qmake.conf D:/
 		D:/Dev/Qt/5.9.1/qt/mkspecs/features/qt_config.prf \
 		D:/Dev/Qt/5.9.1/qt/mkspecs/win32-g++/qmake.conf \
 		D:/Dev/Qt/5.9.1/qt/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		D:/Dev/Qt/5.9.1/qt/mkspecs/features/exclusive_builds.prf \
 		D:/Dev/Qt/5.9.1/qt/mkspecs/features/toolchain.prf \
 		D:/Dev/Qt/5.9.1/qt/mkspecs/features/default_pre.prf \
@@ -387,6 +388,7 @@ D:/Dev/Qt/5.9.1/qt/mkspecs/features/qt_functions.prf:
 D:/Dev/Qt/5.9.1/qt/mkspecs/features/qt_config.prf:
 D:/Dev/Qt/5.9.1/qt/mkspecs/win32-g++/qmake.conf:
 D:/Dev/Qt/5.9.1/qt/mkspecs/features/spec_post.prf:
+.qmake.stash:
 D:/Dev/Qt/5.9.1/qt/mkspecs/features/exclusive_builds.prf:
 D:/Dev/Qt/5.9.1/qt/mkspecs/features/toolchain.prf:
 D:/Dev/Qt/5.9.1/qt/mkspecs/features/default_pre.prf:

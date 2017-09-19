@@ -1,6 +1,6 @@
 #ifndef MYWIDGET_H
 #define MYWIDGET_H
-
+#include<QPushButton>
 #include <QWidget>
 
 class MyWidget : public QWidget
@@ -13,6 +13,8 @@ public:
     //mouse press event
     void mousePressEvent(QMouseEvent *event);
     QPoint point_press;
+    //按钮
+    QPushButton* button;
 signals:
 
 public slots:
